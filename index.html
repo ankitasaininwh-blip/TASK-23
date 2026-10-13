@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workspace AI - Work Smarter</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            float: "float 5s ease-in-out infinite",
+            appear: "appear .8s ease-out both"
+          },
+          keyframes: {
+            float: {
+              "0%, 100%": { transform: "translateY(0)" },
+              "50%": { transform: "translateY(-12px)" }
+            },
+            appear: {
+              from: { opacity: "0", transform: "translateY(20px)" },
+              to: { opacity: "1", transform: "translateY(0)" }
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-slate-900 antialiased">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 border-b border-orange-100/70
+                 bg-white/80 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between
+                px-5 py-4 lg:px-10">
+
+      <a href="#home" class="flex items-center gap-2">
+        <span class="flex h-10 w-10 items-center justify-center
+                     rounded-xl bg-orange-500 text-xl font-bold text-white">
+          W
+        </span>
+        <span class="text-xl font-bold tracking-tight">
+          Workspace<span class="text-orange-500">AI</span>
+        </span>
+      </a>
+
+      <div class="hidden items-center gap-7 text-sm font-medium
+                  text-slate-600 md:flex">
+        <a href="#features" class="transition hover:text-orange-600">Features</a>
+        <a href="#resources" class="transition hover:text-orange-600">Resources</a>
+        <a href="#pricing" class="transition hover:text-orange-600">Pricing</a>
+        <a href="#login" class="transition hover:text-orange-600">Log in</a>
+      </div>
+
+      <a href="#pricing"
+         class="rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold
+                text-white transition hover:bg-orange-500">
+        Get AI free <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="home"
+      class="relative overflow-hidden bg-gradient-to-b
+             from-orange-100 via-orange-50 to-white">
+
+      <div class="pointer-events-none absolute -right-20 -top-24
+                  h-80 w-80 rounded-full bg-orange-200/50 blur-3xl"></div>
+
+      <div class="mx-auto max-w-7xl px-5 pb-20 pt-16
+                  text-center sm:pt-24">
+
+        <div class="mb-7 inline-flex items-center gap-2 rounded-full
+                    border border-orange-200 bg-white/80 px-4 py-2
+                    text-sm text-orange-800">
+          <span class="h-2 w-2 rounded-full bg-green-500"></span>
+          Your smarter workspace starts here
+        </div>
+
+        <h1 class="mx-auto max-w-5xl text-4xl font-light
+                   leading-tight tracking-tight sm:text-6xl lg:text-7xl">
+          Write, plan, share.
+          <span class="block font-semibold">
+            With AI at your side.
+          </span>
+        </h1>
+
+        <p class="mx-auto mt-6 max-w-2xl text-base leading-7
+                  text-slate-600 sm:text-lg">
+          Bring your tasks, projects and team together in one simple
+          workspace. Spend less time managing work and more time
+          making great things happen.
+        </p>
+
+        <div class="mt-9 flex flex-col justify-center gap-4
+                    sm:flex-row">
+
+          <a href="#pricing"
+             class="rounded-full bg-slate-900 px-7 py-4 font-semibold
+                    text-white transition hover:bg-orange-500">
+            Get AI free <span aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contact"
+             class="rounded-full border border-slate-300 bg-white/70
+                    px-7 py-4 font-semibold transition
+                    hover:border-orange-400 hover:bg-orange-100">
+            Request a demo
+          </a>
+        </div>
+
+        <p class="mt-4 text-xs text-slate-500">
+          No complicated setup · Start organizing your work today
+        </p>
+
+        <!-- DASHBOARD PREVIEW WITH FLOATING CARDS -->
+        <div class="relative mx-auto mt-16 max-w-5xl
+                    animate-appear sm:mt-20">
+
+          <!-- Dashboard preview -->
+          <div class="relative overflow-hidden rounded-2xl
+                      border border-slate-200 bg-white text-left
+                      shadow-2xl shadow-orange-900/10">
+
+            <!-- Dashboard top bar -->
+            <div class="flex items-center justify-between
+                        border-b border-slate-100 px-4 py-4 sm:px-7">
+
+              <div class="flex items-center gap-2">
+                <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                <span class="h-3 w-3 rounded-full bg-green-400"></span>
+              </div>
+
+              <span class="text-xs font-medium text-slate-400 sm:text-sm">
+                workspace.app/dashboard
+              </span>
+
+              <div class="h-8 w-8 rounded-full bg-orange-100
+                          text-center text-sm font-bold leading-8
+                          text-orange-700">A</div>
+            </div>
+
+            <div class="grid min-h-[360px] grid-cols-1 sm:grid-cols-4">
+
+              <!-- Sidebar -->
+              <aside class="hidden border-r border-slate-100
+                            bg-slate-50 p-5 sm:block">
+
+                <p class="mb-6 text-xs font-semibold uppercase
+                          tracking-widest text-slate-400">
+                  Workspace
+                </p>
+
+                <div class="mb-3 rounded-lg bg-orange-100
+                            px-3 py-2 text-sm font-semibold
+                            text-orange-700">
+                  ▦ Dashboard
+                </div>
+
+                <div class="mb-3 px-3 py-2 text-sm text-slate-600">
+                  ✓ My Tasks
+                </div>
+
+                <div class="mb-3 px-3 py-2 text-sm text-slate-600">
+                  ◷ Projects
+                </div>
+
+                <div class="px-3 py-2 text-sm text-slate-600">
+                  ♙ Team
+                </div>
+              </aside>
+
+              <!-- Main dashboard -->
+              <div class="p-5 sm:col-span-3 sm:p-8">
+
+                <div class="flex flex-wrap items-center
+                            justify-between gap-3">
+
+                  <div>
+                    <p class="text-xs text-slate-400">MONDAY, OCTOBER 12</p>
+                    <h2 class="mt-2 text-xl font-bold sm:text-2xl">
+                      Good morning, Alex!
+                    </h2>
+                    <p class="mt-1 text-sm text-slate-500">
+                      Here's what's happening today.
+                    </p>
+                  </div>
+
+                  <button type="button"
+                    class="rounded-lg bg-orange-500 px-4 py-2
+                           text-sm font-semibold text-white
+                           transition hover:bg-orange-600">
+                    + New task
+                  </button>
+                </div>
+
+                <!-- Stats -->
+                <div class="mt-7 grid grid-cols-2 gap-3 lg:grid-cols-3">
+
+                  <div class="rounded-xl border border-slate-100
+                              p-4 transition hover:border-orange-200
+                              hover:bg-orange-50">
+                    <p class="text-xs text-slate-500">Total Tasks</p>
+                    <p class="mt-2 text-2xl font-bold">24</p>
+                    <p class="mt-1 text-xs text-green-600">↑ 12% this week</p>
+                  </div>
+
+                  <div class="rounded-xl border border-slate-100
+                              p-4 transition hover:border-orange-200
+                              hover:bg-orange-50">
+                    <p class="text-xs text-slate-500">Completed</p>
+                    <p class="mt-2 text-2xl font-bold">18</p>
+                    <p class="mt-1 text-xs text-green-600">75% completed</p>
+                  </div>
+
+                  <div class="col-span-2 rounded-xl border
+                              border-slate-100 p-4 transition
+                              hover:border-orange-200 hover:bg-orange-50
+                              lg:col-span-1">
+                    <p class="text-xs text-slate-500">Team Members</p>
+                    <p class="mt-2 text-2xl font-bold">08</p>
+                    <p class="mt-1 text-xs text-orange-600">Team is active</p>
+                  </div>
+                </div>
+
+                <!-- Progress -->
+                <div class="mt-5 rounded-xl border border-slate-100 p-5">
+                  <div class="flex justify-between gap-3">
+                    <h3 class="font-semibold">Website Redesign</h3>
+                    <span class="text-sm font-semibold text-orange-600">
+                      75%
+                    </span>
+                  </div>
+
+                  <div class="mt-4 h-2 overflow-hidden rounded-full
+                              bg-slate-100">
+                    <div class="h-full w-3/4 rounded-full bg-orange-500"></div>
+                  </div>
+
+                  <div class="mt-3 flex justify-between text-xs
+                              text-slate-400">
+                    <span>18 of 24 tasks completed</span>
+                    <span>Due Friday</span>
+                  </div>
+                </div>
+
+                <!-- Recent tasks -->
+                <div class="mt-5 rounded-xl border border-slate-100 p-5">
+                  <h3 class="font-semibold">Today's Tasks</h3>
+
+                  <div class="mt-4 space-y-4 text-sm">
+                    <div class="flex items-center gap-3">
+                      <span class="flex h-5 w-5 items-center
+                                   justify-center rounded-full
+                                   bg-green-100 text-xs text-green-700">✓</span>
+                      <span class="text-slate-500 line-through">
+                        Finalize project proposal
+                      </span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <span class="h-5 w-5 rounded-full border-2
+                                   border-orange-400"></span>
+                      <span>Review design updates</span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <span class="h-5 w-5 rounded-full border-2
+                                   border-slate-200"></span>
+                      <span>Prepare team presentation</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating card 1 -->
+          <div class="absolute -left-2 top-10 w-40 rounded-xl
+                      border border-slate-100 bg-white p-4 text-left
+                      shadow-xl animate-float sm:-left-10 sm:w-52">
+            <div class="flex items-center gap-2">
+              <span class="flex h-9 w-9 items-center justify-center
+                           rounded-lg bg-emerald-100 text-lg">✓</span>
+              <div>
+                <p class="text-xs text-slate-500">Tasks</p>
+                <p class="font-bold">12 completed</p>
+              </div>
+            </div>
+            <div class="mt-3 h-1.5 rounded-full bg-slate-100">
+              <div class="h-1.5 w-3/4 rounded-full bg-emerald-500"></div>
+            </div>
+          </div>
+
+          <!-- Floating card 2 -->
+          <div class="absolute -right-2 top-1/3 w-40 rounded-xl
+                      border border-slate-100 bg-white p-4 text-left
+                      shadow-xl animate-float sm:-right-10 sm:w-52"
+               style="animation-delay:1s">
+
+            <div class="flex items-center gap-2">
+              <span class="flex h-9 w-9 items-center justify-center
+                           rounded-lg bg-violet-100 text-lg">↗</span>
+              <div>
+                <p class="text-xs text-slate-500">Project Status</p>
+                <p class="font-bold text-violet-700">On Track</p>
+              </div>
+            </div>
+            <p class="mt-3 text-xs text-slate-500">
+              Everything is going smoothly.
+            </p>
+          </div>
+
+          <!-- Floating card 3 -->
+          <div class="absolute -bottom-9 right-5 w-48 rounded-xl
+                      border border-slate-100 bg-white p-4 text-left
+                      shadow-xl animate-float sm:right-16 sm:w-56"
+               style="animation-delay:2s">
+
+            <div class="flex items-center gap-2">
+              <div class="flex h-9 w-9 items-center justify-center
+                          rounded-full bg-orange-100 font-bold
+                          text-orange-700">T</div>
+              <div>
+                <p class="font-semibold">Team Activity</p>
+                <p class="text-xs text-slate-500">5+ online</p>
+              </div>
+              <span class="ml-auto h-2 w-2 rounded-full bg-green-500"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="mx-auto max-w-7xl px-5 py-24 lg:px-10">
+
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-sm font-semibold uppercase tracking-widest
+                  text-orange-600">Everything in one place</p>
+
+        <h2 class="mt-4 text-3xl font-light tracking-tight sm:text-5xl">
+          A better way to get
+          <span class="font-semibold">work done.</span>
+        </h2>
+
+        <p class="mt-5 leading-7 text-slate-500">
+          Organize your projects, manage your daily work and collaborate
+          with your team without the unnecessary complexity.
+        </p>
+      </div>
+
+      <div class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+
+        <article class="group rounded-2xl bg-slate-50 p-7 transition
+                        duration-300 hover:-translate-y-1
+                        hover:bg-emerald-50">
+          <div class="flex h-12 w-12 items-center justify-center
+                      rounded-xl bg-emerald-100 text-2xl">✓</div>
+          <h3 class="mt-5 text-xl font-semibold transition
+                     group-hover:text-emerald-700">Smart Task Management</h3>
+          <p class="mt-3 leading-7 text-slate-600">
+            Keep track of priorities, deadlines and completed tasks
+            with an organized workflow.
+          </p>
+        </article>
+
+        <article class="group rounded-2xl bg-slate-50 p-7 transition
+                        duration-300 hover:-translate-y-1
+                        hover:bg-amber-50">
+          <div class="flex h-12 w-12 items-center justify-center
+                      rounded-xl bg-amber-100 text-2xl">▦</div>
+          <h3 class="mt-5 text-xl font-semibold transition
+                     group-hover:text-amber-700">Project Planning</h3>
+          <p class="mt-3 leading-7 text-slate-600">
+            Break large projects into manageable steps and
+            monitor progress in one place.
+          </p>
+        </article>
+
+        <article class="group rounded-2xl bg-slate-50 p-7 transition
+                        duration-300 hover:-translate-y-1
+                        hover:bg-violet-50">
+          <div class="flex h-12 w-12 items-center justify-center
+                      rounded-xl bg-violet-100 text-2xl">♙</div>
+          <h3 class="mt-5 text-xl font-semibold transition
+                     group-hover:text-violet-700">Team Collaboration</h3>
+          <p class="mt-3 leading-7 text-slate-600">
+            Keep everyone informed, share updates and work
+            together towards common goals.
+          </p>
+        </article>
+
+        <article class="group rounded-2xl bg-slate-50 p-7 transition
+                        duration-300 hover:-translate-y-1
+                        hover:bg-rose-50">
+          <div class="flex h-12 w-12 items-center justify-center
+                      rounded-xl bg-rose-100 text-2xl">◷</div>
+          <h3 class="mt-5 text-xl font-semibold transition
+                     group-hover:text-rose-700">Time Tracking</h3>
+          <p class="mt-3 leading-7 text-slate-600">
+            Understand your workflow and focus on what
+            matters most throughout the day.
+          </p>
+        </article>
+
+        <article class="group rounded-2xl bg-slate-50 p-7 transition
+                        duration-300 hover:-translate-y-1
+                        hover:bg-sky-50">
+          <div class="flex h-12 w-12 items-center justify-center
+                      rounded-xl bg-sky-100 text-2xl">▤</div>
+          <h3 class="mt-5 text-xl font-semibold transition
+                     group-hover:text-sky-700">Shared Resources</h3>
+          <p class="mt-3 leading-7 text-slate-600">
+            Keep useful documents, project notes and
+            team resources organized.
+          </p>
+        </article>
+
+        <article class="group rounded-2xl bg-slate-50 p-7 transition
+                        duration-300 hover:-translate-y-1
+                        hover:bg-orange-50">
+          <div class="flex h-12 w-12 items-center justify-center
+                      rounded-xl bg-orange-100 text-2xl">✦</div>
+          <h3 class="mt-5 text-xl font-semibold transition
+                     group-hover:text-orange-700">AI-Assisted Workflow</h3>
+          <p class="mt-3 leading-7 text-slate-600">
+            Explore a more streamlined workspace designed
+            to make everyday work easier.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="resources" class="bg-slate-50 py-20">
+      <div class="mx-auto max-w-7xl px-5 lg:px-10">
+
+        <div class="flex flex-col justify-between gap-4 sm:flex-row
+                    sm:items-end">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-widest
+                      text-orange-600">Inside the workspace</p>
+            <h2 class="mt-3 text-3xl font-light sm:text-4xl">
+              Made for your
+              <span class="font-semibold">everyday work.</span>
+            </h2>
+          </div>
+          <p class="max-w-md leading-7 text-slate-500">
+            A clean space to plan projects, follow progress and
+            keep your team connected.
+          </p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2">
+
+          <div class="group relative overflow-hidden rounded-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
+              alt="Modern collaborative workspace"
+              class="h-72 w-full object-cover transition duration-500
+                     group-hover:scale-105 sm:h-96">
+            <div class="absolute inset-0 bg-gradient-to-t
+                        from-black/70 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-xl font-semibold">Team Workspace</h3>
+              <p class="mt-1 text-sm text-white/80">Room to collaborate</p>
+            </div>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85"
+              alt="Bright modern office interior"
+              class="h-72 w-full object-cover transition duration-500
+                     group-hover:scale-105 sm:h-96">
+            <div class="absolute inset-0 bg-gradient-to-t
+                        from-black/70 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-xl font-semibold">A Clearer Workflow</h3>
+              <p class="mt-1 text-sm text-white/80">Designed for focus</p>
+            </div>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=85"
+              alt="Shared office meeting space"
+              class="h-72 w-full object-cover transition duration-500
+                     group-hover:scale-105 sm:h-80">
+            <div class="absolute inset-0 bg-gradient-to-t
+                        from-black/70 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-xl font-semibold">Shared Spaces</h3>
+              <p class="mt-1 text-sm text-white/80">Bring ideas together</p>
+            </div>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1000&q=85"
+              alt="Open plan office with desks"
+              class="h-72 w-full object-cover transition duration-500
+                     group-hover:scale-105 sm:h-80">
+            <div class="absolute inset-0 bg-gradient-to-t
+                        from-black/70 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 text-white">
+              <h3 class="text-xl font-semibold">Organized Projects</h3>
+              <p class="mt-1 text-sm text-white/80">Keep moving forward</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BENTO VALUES -->
+    <section class="mx-auto max-w-7xl px-5 py-24 lg:px-10">
+      <div class="grid gap-5 md:grid-cols-3">
+
+        <div class="rounded-3xl bg-slate-900 p-8 text-white
+                    transition hover:bg-slate-800 md:col-span-2">
+          <p class="text-sm text-orange-300">OUR APPROACH</p>
+          <h2 class="mt-5 max-w-xl text-3xl font-light leading-tight
+                     sm:text-5xl">
+            Less busywork.
+            <span class="font-semibold">More meaningful work.</span>
+          </h2>
+          <p class="mt-5 max-w-xl leading-7 text-slate-300">
+            Bring your daily tasks, team communication and project
+            updates together so you can spend more time on your ideas.
+          </p>
+        </div>
+
+        <div class="rounded-3xl bg-emerald-100 p-8 transition
+                    hover:bg-emerald-200">
+          <p class="text-sm font-semibold text-emerald-800">01 / COMMUNITY</p>
+          <h3 class="mt-8 text-3xl font-semibold">Better Together</h3>
+          <p class="mt-4 leading-7 text-slate-700">
+            Build stronger connections and keep your team aligned.
+          </p>
+        </div>
+
+        <div class="rounded-3xl bg-amber-100 p-8 transition
+                    hover:bg-amber-200">
+          <p class="text-sm font-semibold text-amber-800">02 / EXPERIENCE</p>
+          <h3 class="mt-8 text-3xl font-semibold">Simple by Design</h3>
+          <p class="mt-4 leading-7 text-slate-700">
+            Spend less time finding things and more time doing them.
+          </p>
+        </div>
+
+        <div class="rounded-3xl bg-rose-100 p-8 transition
+                    hover:bg-rose-200">
+          <p class="text-sm font-semibold text-rose-800">03 / PROGRESS</p>
+          <h3 class="mt-8 text-3xl font-semibold">Keep Growing</h3>
+          <p class="mt-4 leading-7 text-slate-700">
+            Track progress, learn from your work and improve every day.
+          </p>
+        </div>
+
+        <div class="rounded-3xl bg-violet-100 p-8 transition
+                    hover:bg-violet-200">
+          <p class="text-sm font-semibold text-violet-800">04 / ACCESS</p>
+          <h3 class="mt-8 text-3xl font-semibold">Work Anywhere</h3>
+          <p class="mt-4 leading-7 text-slate-700">
+            Enjoy a responsive interface on your laptop, tablet or phone.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="border-y border-slate-100 py-20">
+      <div class="mx-auto max-w-7xl px-5 lg:px-10">
+
+        <p class="text-sm font-semibold uppercase tracking-widest
+                  text-orange-600">Why WorkspaceAI?</p>
+
+        <h2 class="mt-4 max-w-3xl text-3xl font-light leading-tight
+                   sm:text-5xl">
+          A thoughtful workspace for
+          <span class="font-semibold">people who build things.</span>
+        </h2>
+
+        <div class="mt-9 grid gap-8 text-base leading-8
+                    text-slate-600 md:grid-cols-2">
+          <p>
+            Great work starts with clarity. WorkspaceAI brings together
+            your priorities, project information and team updates in
+            an organized digital environment. The goal is to make
+            everyday collaboration simpler and more productive.
+          </p>
+          <p>
+            Whether you are planning a new project, following deadlines
+            or sharing ideas with your teammates, a well-organized
+            workspace helps everyone understand what needs to happen
+            next. Start small, stay focused and keep making progress.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="mx-auto max-w-7xl px-5 py-24 lg:px-10">
+
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-widest
+                  text-orange-600">Plans for every team</p>
+        <h2 class="mt-4 text-3xl font-light sm:text-5xl">
+          Start simple.
+          <span class="font-semibold">Grow from there.</span>
+        </h2>
+      </div>
+
+      <div class="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
+
+        <article class="rounded-2xl border border-slate-200 p-7">
+          <h3 class="text-xl font-semibold">Basic</h3>
+          <p class="mt-2 text-sm text-slate-500">For personal projects</p>
+          <p class="mt-6 text-4xl font-bold">Free</p>
+
+          <ul class="mt-6 space-y-3 text-sm text-slate-600">
+            <li>✓ Task organization</li>
+            <li>✓ Basic project tracking</li>
+            <li>✓ Personal workspace</li>
+          </ul>
+
+          <a href="#contact" class="mt-8 block rounded-full
+                    border border-slate-300 px-5 py-3 text-center
+                    font-semibold transition hover:bg-slate-100">
+            Get started
+          </a>
+        </article>
+
+        <article class="relative rounded-2xl border-2
+                        border-orange-400 bg-orange-50 p-7">
+          <span class="absolute -top-3 right-5 rounded-full
+                       bg-orange-500 px-3 py-1 text-xs font-semibold
+                       text-white">POPULAR</span>
+
+          <h3 class="text-xl font-semibold">Student</h3>
+          <p class="mt-2 text-sm text-slate-500">For learning and projects</p>
+          <p class="mt-6 text-4xl font-bold">Free</p>
+
+          <ul class="mt-6 space-y-3 text-sm text-slate-600">
+            <li>✓ Everything in Basic</li>
+            <li>✓ Project progress tracking</li>
+            <li>✓ Team collaboration</li>
+          </ul>
+
+          <a href="#contact" class="mt-8 block rounded-full
+                    bg-orange-500 px-5 py-3 text-center font-semibold
+                    text-white transition hover:bg-orange-600">
+            Choose Student
+          </a>
+        </article>
+
+        <article class="rounded-2xl border border-slate-200 p-7">
+          <h3 class="text-xl font-semibold">Team</h3>
+          <p class="mt-2 text-sm text-slate-500">For collaborative work</p>
+          <p class="mt-6 text-4xl font-bold">Custom</p>
+
+          <ul class="mt-6 space-y-3 text-sm text-slate-600">
+            <li>✓ Shared team workspace</li>
+            <li>✓ Team activity overview</li>
+            <li>✓ Project coordination</li>
+          </ul>
+
+          <a href="#contact" class="mt-8 block rounded-full
+                    border border-slate-300 px-5 py-3 text-center
+                    font-semibold transition hover:bg-slate-100">
+            Contact us
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="bg-slate-50 px-5 py-20">
+      <div class="mx-auto max-w-3xl text-center">
+
+        <div class="mx-auto flex h-16 w-16 items-center justify-center
+                    rounded-full bg-orange-200 text-2xl font-bold
+                    text-orange-800">
+          S
+        </div>
+
+        <p class="mt-8 text-2xl font-light leading-relaxed sm:text-3xl">
+          "Having everything organized in one place makes it
+          easier to focus on the work that really matters."
+        </p>
+
+        <p class="mt-6 font-semibold">Sam Taylor</p>
+        <p class="mt-1 text-sm text-slate-500">Sample testimonial</p>
+
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section id="contact" class="mx-auto max-w-7xl px-5 py-20 lg:px-10">
+      <div class="rounded-3xl bg-emerald-50 p-8 sm:p-14">
+
+        <div class="grid gap-10 md:grid-cols-2 md:items-center">
+
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-widest
+                      text-emerald-800">Let's connect</p>
+            <h2 class="mt-4 text-3xl font-light leading-tight sm:text-5xl">
+              Ready to work
+              <span class="font-semibold">smarter?</span>
+            </h2>
+            <p class="mt-5 leading-7 text-slate-600">
+              Explore a simpler way to organize projects and bring
+              your team together.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 class="text-xl font-semibold">Get in touch</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-500">
+              Have questions or want to see a demo? Send us an email
+              and start a conversation.
+            </p>
+
+            <p class="mt-5 text-sm text-slate-500">
+              Opening hours: Monday – Friday, 9 AM – 5 PM
+            </p>
+
+            <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+              <a href="mailto:hello@example.com"
+                 class="rounded-full bg-slate-900 px-5 py-3
+                        text-center text-sm font-semibold text-white
+                        transition hover:bg-emerald-700">
+                Email us
+              </a>
+
+              <a href="https://maps.google.com/"
+                 target="_blank" rel="noopener noreferrer"
+                 class="rounded-full border border-slate-200 px-5 py-3
+                        text-center text-sm font-semibold transition
+                        hover:bg-emerald-100">
+                Get Directions
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="mx-auto max-w-7xl px-5 pb-24 lg:px-10">
+      <div class="flex flex-col justify-between gap-4 sm:flex-row
+                  sm:items-end">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-widest
+                    text-orange-600">What's happening</p>
+          <h2 class="mt-3 text-3xl font-light sm:text-4xl">
+            Ideas worth
+            <span class="font-semibold">sharing.</span>
+          </h2>
+        </div>
+        <p class="max-w-md text-sm leading-7 text-slate-500">
+          Sample events for workshops, learning sessions and
+          collaborative project planning.
+        </p>
+      </div>
+
+      <div class="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+
+        <article class="group overflow-hidden rounded-2xl
+                        border border-slate-100 bg-white">
+          <div class="overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80"
+                 alt="Team learning workshop"
+                 class="h-44 w-full object-cover transition duration-500
+                        group-hover:scale-105">
+          </div>
+          <div class="p-5">
+            <p class="text-xs font-semibold uppercase text-orange-600">
+              October 20
+            </p>
+            <h3 class="mt-3 font-semibold">Team Workshop</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-500">
+              Learn practical ways to organize projects.
+            </p>
+          </div>
+        </article>
+
+        <article class="group overflow-hidden rounded-2xl
+                        border border-slate-100 bg-white">
+          <div class="overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80"
+                 alt="Digital collaboration session"
+                 class="h-44 w-full object-cover transition duration-500
+                        group-hover:scale-105">
+          </div>
+          <div class="p-5">
+            <p class="text-xs font-semibold uppercase text-orange-600">
+              October 24
+            </p>
+            <h3 class="mt-3 font-semibold">Digital Collaboration</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-500">
+              Discover better ways to share ideas.
+            </p>
+          </div>
+        </article>
+
+        <article class="group overflow-hidden rounded-2xl
+                        border border-slate-100 bg-white">
+          <div class="overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=600&q=80"
+                 alt="Team working together"
+                 class="h-44 w-full object-cover transition duration-500
+                        group-hover:scale-105">
+          </div>
+          <div class="p-5">
+            <p class="text-xs font-semibold uppercase text-orange-600">
+              October 28
+            </p>
+            <h3 class="mt-3 font-semibold">Project Planning</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-500">
+              Turn big ideas into actionable steps.
+            </p>
+          </div>
+        </article>
+
+        <article class="group overflow-hidden rounded-2xl
+                        border border-slate-100 bg-white">
+          <div class="overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80"
+                 alt="Collaborative team meeting"
+                 class="h-44 w-full object-cover transition duration-500
+                        group-hover:scale-105">
+          </div>
+          <div class="p-5">
+            <p class="text-xs font-semibold uppercase text-orange-600">
+              November 02
+            </p>
+            <h3 class="mt-3 font-semibold">Ideas in Action</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-500">
+              Share ideas and learn from others.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-300">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14
+                sm:grid-cols-2 lg:grid-cols-4 lg:px-10">
+
+      <div>
+        <a href="#home" class="text-xl font-bold text-white">
+          Workspace<span class="text-orange-400">AI</span>
+        </a>
+        <p class="mt-4 max-w-xs text-sm leading-7 text-slate-400">
+          A cleaner, simpler space for tasks, projects and collaboration.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-white">Pages</h3>
+        <div class="mt-4 space-y-3 text-sm">
+          <a class="block transition hover:text-orange-400" href="#home">Home</a>
+          <a class="block transition hover:text-orange-400" href="#about">About</a>
+          <a class="block transition hover:text-orange-400" href="#features">Features</a>
+          <a class="block transition hover:text-orange-400" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-white">Sections</h3>
+        <div class="mt-4 space-y-3 text-sm">
+          <a class="block transition hover:text-orange-400" href="#resources">Resources</a>
+          <a class="block transition hover:text-orange-400" href="#pricing">Pricing</a>
+          <a class="block transition hover:text-orange-400" href="#features">Our services</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-white">Connect</h3>
+        <div class="mt-4 space-y-3 text-sm">
+          <a class="block transition hover:text-orange-400"
+             href="mailto:hello@example.com">Email us</a>
+          <a class="block transition hover:text-orange-400"
+             href="#contact">Get in touch</a>
+          <p class="text-slate-400">Built for better teamwork.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10 px-5 py-6 text-center
+                text-xs text-slate-500">
+      © 2026 WorkspaceAI. All rights reserved.
+      <span class="mx-2">|</span>
+      <a href="#home" class="transition hover:text-white">Privacy</a>
+      <span class="mx-2">|</span>
+      <a href="#home" class="transition hover:text-white">Terms</a>
+    </div>
+  </footer>
+
+  <!-- FIXED CHAT WIDGET -->
+  <div class="fixed bottom-6 right-5 z-50 flex flex-col items-end gap-3">
+
+    <div id="chatPanel"
+         class="hidden w-72 overflow-hidden rounded-2xl
+                border border-slate-200 bg-white shadow-2xl sm:w-80">
+
+      <div class="flex items-center justify-between
+                  bg-slate-900 p-4 text-white">
+        <div>
+          <h3 class="font-semibold">Workspace Assistant</h3>
+          <p class="mt-1 text-xs text-slate-300">Here to help you</p>
+        </div>
+        <button id="closeChat" type="button"
+                aria-label="Close chat"
+                class="rounded-lg px-2 py-1 text-xl hover:bg-white/10">
+          ×
+        </button>
+      </div>
+
+      <div id="chatMessages"
+           class="max-h-64 space-y-3 overflow-y-auto p-4 text-sm">
+        <div class="max-w-[90%] rounded-xl bg-slate-100 p-3 text-slate-700">
+          Hi! Welcome to WorkspaceAI. How can I help you?
+        </div>
+      </div>
+
+      <form id="chatForm" class="flex gap-2 border-t p-3">
+        <input id="chatInput" type="text"
+               placeholder="Type a message..."
+               aria-label="Type a message"
+               class="min-w-0 flex-1 rounded-lg border border-slate-200
+                      px-3 py-2 text-sm outline-none
+                      focus:border-orange-400"
+               required>
+        <button type="submit"
+                class="rounded-lg bg-orange-500 px-3 py-2
+                       text-sm font-semibold text-white
+                       hover:bg-orange-600">
+          Send
+        </button>
+      </form>
+    </div>
+
+    <button id="chatToggle" type="button"
+            aria-label="Open chat assistant"
+            aria-expanded="false"
+            class="flex items-center gap-2 rounded-full
+                   bg-orange-500 px-5 py-4 font-semibold text-white
+                   shadow-xl transition hover:scale-105
+                   hover:bg-orange-600">
+      <span class="text-xl">✦</span>
+      <span>Chat with us</span>
+    </button>
+
+  </div>
+
+  <!-- INTERACTIONS -->
+  <script>
+    const chatToggle = document.getElementById("chatToggle");
+    const chatPanel = document.getElementById("chatPanel");
+    const closeChat = document.getElementById("closeChat");
+    const chatForm = document.getElementById("chatForm");
+    const chatInput = document.getElementById("chatInput");
+    const chatMessages = document.getElementById("chatMessages");
+
+    function toggleChat(show) {
+      chatPanel.classList.toggle("hidden", !show);
+      chatToggle.setAttribute("aria-expanded", String(show));
+
+      if (show) {
+        chatInput.focus();
+      }
+    }
+
+    chatToggle.addEventListener("click", function () {
+      toggleChat(chatPanel.classList.contains("hidden"));
+    });
+
+    closeChat.addEventListener("click", function () {
+      toggleChat(false);
+    });
+
+    function addMessage(message, isUser) {
+      const bubble = document.createElement("div");
+
+      bubble.className = isUser
+        ? "ml-auto max-w-[90%] rounded-xl bg-orange-500 p-3 text-white"
+        : "max-w-[90%] rounded-xl bg-slate-100 p-3 text-slate-700";
+
+      bubble.textContent = message;
+      chatMessages.appendChild(bubble);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function getReply(message) {
+      const text = message.toLowerCase();
+
+      if (text.includes("hello") || text.includes("hi") ||
+          text.includes("hey")) {
+        return "Hello! How can I help you with your workspace?";
+      }
+
+      if (text.includes("task")) {
+        return "You can organize tasks, set priorities and track completion in your dashboard.";
+      }
+
+      if (text.includes("project")) {
+        return "Use the project dashboard to review progress and manage your work.";
+      }
+
+      if (text.includes("price") || text.includes("pricing") ||
+          text.includes("cost")) {
+        return "Please visit the Pricing section to view the available plans.";
+      }
+
+      if (text.includes("contact") || text.includes("email")) {
+        return "You can contact us using the email link in the Contact section.";
+      }
+
+      if (text.includes("thank")) {
+        return "You're welcome! Have a productive day.";
+      }
+
+      return "Thanks for your message! Please explore the Features and Contact sections for more information.";
+    }
+
+    chatForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const message = chatInput.value.trim();
+
+      if (!message) return;
+
+      addMessage(message, true);
+      chatInput.value = "";
+
+      addMessage(getReply(message), false);
+    });
+  </script>
+
+</body>
+</html>
